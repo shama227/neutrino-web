@@ -142,7 +142,7 @@ module.exports = class App implements ApplicationParams {
         this._isSkipUpdates = true;
 
         this._router.start();
-        this._websocket.start();
+        // this._websocket.start();
 
         await this.postgresService.start();
         await this.heightListener.start();
